@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenLogin.API", "Server\TokenLogin.API\TokenLogin.API.csproj", "{836F6A90-CB89-4D62-89B1-815E2C69DEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenLogin.Model", "Server\TokenLogin.Model\TokenLogin.Model.csproj", "{88DE8E01-58E3-4722-A100-390FC570AFCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenLogin.Service", "Server\TokenLogin.Service\TokenLogin.Service.csproj", "{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenLogin.Repository", "Server\TokenLogin.Repository\TokenLogin.Repository.csproj", "{8F97D984-10C5-4597-9EB7-E2BE6828D67F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenLogin.Data", "Server\TokenLogin.Data\TokenLogin.Data.csproj", "{6C63DC22-BC46-4472-BB94-B58CF6A9A90A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{BC27C83C-E94C-4D95-89B6-459EACFA4FFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{0505F6AE-2CFE-442B-B86C-EF1CDC4ACC65}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TokenLogin.Web(1)", "Client\TokenLogin.Web\", "{FAA19000-EA13-4538-BD07-3C704AEB3F5B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58594"
+		Debug.AspNetCompiler.PhysicalPath = "Client\TokenLogin.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58594\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58594"
+		Release.AspNetCompiler.PhysicalPath = "Client\TokenLogin.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58594\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58594"
+		SlnRelativePath = "Client\TokenLogin.Web\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{836F6A90-CB89-4D62-89B1-815E2C69DEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836F6A90-CB89-4D62-89B1-815E2C69DEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836F6A90-CB89-4D62-89B1-815E2C69DEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836F6A90-CB89-4D62-89B1-815E2C69DEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DE8E01-58E3-4722-A100-390FC570AFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DE8E01-58E3-4722-A100-390FC570AFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DE8E01-58E3-4722-A100-390FC570AFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DE8E01-58E3-4722-A100-390FC570AFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F97D984-10C5-4597-9EB7-E2BE6828D67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F97D984-10C5-4597-9EB7-E2BE6828D67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F97D984-10C5-4597-9EB7-E2BE6828D67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F97D984-10C5-4597-9EB7-E2BE6828D67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C63DC22-BC46-4472-BB94-B58CF6A9A90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C63DC22-BC46-4472-BB94-B58CF6A9A90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C63DC22-BC46-4472-BB94-B58CF6A9A90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C63DC22-BC46-4472-BB94-B58CF6A9A90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA19000-EA13-4538-BD07-3C704AEB3F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA19000-EA13-4538-BD07-3C704AEB3F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA19000-EA13-4538-BD07-3C704AEB3F5B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA19000-EA13-4538-BD07-3C704AEB3F5B}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{836F6A90-CB89-4D62-89B1-815E2C69DEFE} = {BC27C83C-E94C-4D95-89B6-459EACFA4FFE}
+		{88DE8E01-58E3-4722-A100-390FC570AFCF} = {BC27C83C-E94C-4D95-89B6-459EACFA4FFE}
+		{87980F6B-2AB8-4274-AC99-DCB1F5E31BE7} = {BC27C83C-E94C-4D95-89B6-459EACFA4FFE}
+		{8F97D984-10C5-4597-9EB7-E2BE6828D67F} = {BC27C83C-E94C-4D95-89B6-459EACFA4FFE}
+		{6C63DC22-BC46-4472-BB94-B58CF6A9A90A} = {BC27C83C-E94C-4D95-89B6-459EACFA4FFE}
+		{FAA19000-EA13-4538-BD07-3C704AEB3F5B} = {0505F6AE-2CFE-442B-B86C-EF1CDC4ACC65}
+	EndGlobalSection
+EndGlobal
