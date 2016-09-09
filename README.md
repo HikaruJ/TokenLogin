@@ -2,8 +2,15 @@
 Token Login is an ongoing project to create a usable skeleton for web developers in C#.  
 The project aim is to develop a skeletion that provides a token based access using OWIN, ASP.NET Identity, WebAPI and Dependency Injection.
 
+## Initializinng the Project
+Before starting to use the project, please verify that you have SQL Express installed on the computer (or SQL).  
+Open the project and using the "Package Console Manager", write the "Update-Database" (without the quotes) in order  
+to initialize the database.
+
 ## Project Status
 The project is currently still in early stages of development.
+- **Signup** [80%%] - The Signup page is working correctly, however it does not have protection against duplicate registration.
+- **Login** [100%%] - The Login page is working correctly.
 - **Landing Page** [20%] - The current page uses controllers and views instead of the components pattern in AngularJS.
 - **Refresh Tokens** [80%] - Currently I do not display the option to connect with refresh tokens, due to an error in the RepositoryBase, which I need to solve.
 - **Unit Testing** [0%] - The project is missing unit tests for checking that everything works correctly.
