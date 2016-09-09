@@ -20,9 +20,9 @@ The project utilizes the [AngularJSAutentication] (https://github.com/tjoudeh/An
 ## Design Patterns and Concepts
 - [**Unit of Work**](http://www.codeproject.com/Articles/581487/Unit-of-Work-Design-Pattern)
 - [**Repository Pattern**](https://msdn.microsoft.com/en-us/library/ff649690.aspx)
-- [**Database Factory Pattern**]http://coding-geek.com/design-pattern-factory-patterns/)
+- [**Database Factory Pattern**](http://coding-geek.com/design-pattern-factory-patterns/)
 - [**Dependency Injection**](https://en.wikipedia.org/wiki/Dependency_injection)
-- [**Access Token]**(https://en.wikipedia.org/wiki/Access_token)
+- [**Access Token**](https://en.wikipedia.org/wiki/Access_token)
 - [**Refresh Token**](https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/)
 
 ## Client Side
@@ -31,7 +31,7 @@ For the client side I have decided to use the following technologies:
 
 ## Server Side
 For the server side I have decide to use **Ruby on Rails** with the following gems:  
-1. [**C#**](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
+1. [**C#**](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))  
 2. [**WebAPI**](http://www.asp.net/web-api).  
 3. [**OWIN**](http://owin.org/).  
 4. [**ASP.NET Identity**](http://www.asp.net/identity).  
