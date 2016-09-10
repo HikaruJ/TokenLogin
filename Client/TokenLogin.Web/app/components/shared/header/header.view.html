@@ -1,0 +1,32 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="btn btn-success navbar-toggle" data-ng-click="$ctrl.navbarExpanded = !$ctrl.navbarExpanded">
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <a class="navbar-brand" href="" data-ui-sref="home">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" data-collapse="!$ctrl.navbarExpanded">
+            <ul class="nav navbar-nav navbar-right">
+                <li data-ng-hide="!$ctrl.authentication.isAuth"><a href="" data-ui-sref="welcome">Welcome {{$ctrl.authentication.userName}}</a></li>
+                <li data-ng-hide="!$ctrl.authentication.isAuth"><a href="" data-ng-click="$ctrl.logOut()">Logout</a></li>
+                <li data-ng-hide="$ctrl.authentication.isAuth"> <a href="" data-ui-sref="login">Login</a></li>
+                <li data-ng-hide="$ctrl.authentication.isAuth"> <a href="" data-ui-sref="register">Register</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>Token Login</h1>
+        </div>
+        <p>This is a demonstration APP developed using ASP.NET Web API 2, OWIN middleware, ASP.NET Identity and AutoFac to demonstrate the capabilities of C# with token access.</p>
+        <p>
+            As a developer when wanting to start a fresh project, it is not always easy to create a working skeleton containing this technologies. While there are different projects
+            that provide some of the features, there wasn't a single project that encapsulates everything in order to provide a user with the option to start working right away.
+        <p>
+            I recommend reading first about the different concepts used in this project (Repository Pattern, Unit of Work Pattern, OWIN, ASP.NET Identity, Access-Token, Dependency Injection) before starting to use it.
+        </p>
+    </div>
+</div>

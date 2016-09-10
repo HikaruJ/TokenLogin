@@ -1,90 +1,49 @@
 ﻿<!DOCTYPE html>
-<html data-ng-app="AngularAuthApp">
-<head>
-    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
-    <title>Token Login</title>
-    <link href="assets//css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets//css/site.css" rel="stylesheet" />
-    <link href="assets//css/loading-bar.css" rel="stylesheet" />
-    <link href="assets//css/font-awesome.min.css" rel="stylesheet" />
-    <link href="assets//css/social-buttons.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" data-ng-controller="indexController">
+<html data-ng-app="TokenLoginApp">
+    <head>
+        <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+        <title>Token Login</title>
+        <link href="assets//css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets//css/site.css" rel="stylesheet" />
+        <link href="assets//css/loading-bar.css" rel="stylesheet" />
+        <link href="assets//css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets//css/social-buttons.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    </head>
+    <body>
+        <header></header>
+    
         <div class="container">
-            <div class="navbar-header">
-                <button class="btn btn-success navbar-toggle" data-ng-click="navbarExpanded = !navbarExpanded">
-                    <span class="glyphicon glyphicon-chevron-down"></span>
-                </button>
-                <a class="navbar-brand" href="#/">Home</a>
-            </div>
-            <div class="collapse navbar-collapse" data-collapse="!navbarExpanded">
-                <ul class="nav navbar-nav navbar-right">
-                    <li data-ng-hide="!authentication.isAuth"><a href="#">Welcome {{authentication.userName}}</a></li>
-                    <li data-ng-hide="!authentication.isAuth"><a href="" data-ng-click="logOut()">Logout</a></li>
-                    <li data-ng-hide="authentication.isAuth"> <a href="#/login">Login</a></li>
-                    <li data-ng-hide="authentication.isAuth"> <a href="#/signup">Sign Up</a></li>
-                </ul>
+            <div data-ui-view>
             </div>
         </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <div class="page-header text-center">
-                <h1>Token Login</h1>
-            </div>
-            <p>This is a demonstration APP developed using ASP.NET Web API 2, OWIN middleware, ASP.NET Identity and AutoFac to demonstrate the capabilities of C# with token access.</p>
-            <p>
-                As a developer when wanting to start a fresh project, it is not always easy to create a working skeleton containing this technologies. While there are different projects 
-                that provide some of the features, there wasn't a single project that encapsulates everything in order to provide a user with the option to start working right away. 
-            <p>
-                I recommend reading first about the different concepts used in this project (Repository Pattern, Unit of Work Pattern, Owin, ASP.NET Identity, Access-Token, Dependency Injection) before starting to use it.
-            </p>
-        </div>
-    </div>
 
-    <div class="container">
-        <div data-ng-view="">
-        </div>
-    </div>
+        <hr />
 
-    <hr />
+        <footer></footer>
 
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text-muted">Created by <a target="_blank" href="http://www.linkedin.com/in/or-perlman">Or Perlman</a></p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-muted">Based on the <a target="_blank" href="https://github.com/MarlabsInc/webapi-angularjs-spa">WebAPI SPA</a> and <a target="_blank" href="http://bitoftech.net/2014/06/01/token-based-authentication-asp-net-web-api-2-owin-asp-net-identity/">Token Based Authentication</a> projects</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- 3rd party libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <script src="//npmcdn.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="assets/scripts/angular-local-storage.min.js"></script>
+        <script src="assets/scripts/loading-bar.min.js"></script>
 
-    <!-- 3rd party libraries -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
-    <script src="assets/scripts/angular-local-storage.min.js"></script>
-    <script src="assets/scripts/loading-bar.min.js"></script>
+        <!-- Load application main scripts -->
+        <script src="app/app.module.js?v=2"></script>
+        <script src="app/app.routes.js?v=2"></script>
 
-    <!-- Load app main script -->
-    <script src="app/app.js?v=2"></script>
-
-    <!-- Load services -->
-    <script src="app/services/authInterceptorService.js?v=2"></script>
-    <script src="app/services/authService.js?v=2"></script>
-    <script src="app/services/tokensManagerService.js?v=2"></script>
+        <!-- Load services -->
+        <script src="app/services/authInterceptorService.js?v=2"></script>
+        <script src="app/services/authService.js?v=2"></script>
+        <script src="app/services/tokensManagerService.js?v=2"></script>
 	
-    <!-- Load controllers -->
-    <script src="app/controllers/indexController.js?v=2"></script>
-    <script src="app/controllers/homeController.js?v=2"></script>
-    <script src="app/controllers/loginController.js?v=2"></script>
-    <script src="app/controllers/signupController.js?v=2"></script>
-    <script src="app/controllers/associateController.js?v=2"></script>
-    <!-- Load custom filters -->
-    <!-- Load custom directives -->
-</body>
+        <!-- Load components -->
+        <script src="app/components/associate/associate.component.js?v=2"></script>
+        <script src="app/components/home/home.component.js?v=2"></script>
+        <script src="app/components/shared/footer/footer.component.js?v=2"></script>
+        <script src="app/components/shared/header/header.component.js?v=2"></script>
+        <script src="app/components/login/login.component.js?v=2"></script>
+        <script src="app/components/register/register.component.js?v=2"></script>
+        <script src="app/components/welcome/welcome.component.js?v=2"></script>
+    </body>
 </html>
