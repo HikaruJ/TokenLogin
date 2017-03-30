@@ -2,7 +2,7 @@
 Token Login is an ongoing project to create a usable skeleton for web developers in C#.  
 The project aim is to develop a skeletion that provides a token based access using OWIN, ASP.NET Identity, WebAPI and Dependency Injection.
 
-## Initializinng the Project
+## Initializing the Project
 Before starting to use the project, please verify that you have SQL Express installed on the computer (or SQL).  
 Open the project and using the "Package Console Manager", write the "Update-Database" (without the quotes) in order  
 to initialize the database.
@@ -18,7 +18,7 @@ The project is currently still in early stages of development.
 ## Design
 The project utilizes the [AngularJSAutentication] (https://github.com/tjoudeh/AngularJSAuthentication) layout, but will be replace in future versions.
 
-## Enviornment and Tools
+## Environment and Tools
 - **Environment** - [Windows 10](https://www.microsoft.com/en-us/windows/get-windows-10).  
 - **Editor** - [Visual Studio 2015](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx).  
 - **Markup** - HTML5.  
