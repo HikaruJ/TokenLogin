@@ -1,5 +1,5 @@
 # Token Login
-Token Login is an ongoing project to create a usable skeleton for web developers in C#.  
+Token Login is project that was aiming to create a usable skeleton for web developers in C#.  
 The project aim is to develop a skeletion that provides a token based access using OWIN, ASP.NET Identity, WebAPI and Dependency Injection.
 
 ## Initializing the Project
