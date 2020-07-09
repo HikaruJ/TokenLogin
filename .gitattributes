@@ -68,3 +68,4 @@
 *.pp linguist-detectable=fals
 *.pas linguist-detectable=false
 *.inc linguist-detectable=false
+Server/Extensions/* linguist-vendored
