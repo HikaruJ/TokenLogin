@@ -63,4 +63,4 @@
 #*.RTF   diff=astextplain
 
 *.js linguist-detectable=false
-*.ps linguist-detectable=false
+*.ps1 linguist-detectable=false
